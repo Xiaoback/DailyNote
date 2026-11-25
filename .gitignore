@@ -1,0 +1,11 @@
+build/
+.DS_Store
+.local-data/
+DataBackups/
+*.log
+*.p12
+*.key
+*.mobileprovision
+*.provisionprofile
+**/xcuserdata/
+Resources/Fonts/*.ttf
