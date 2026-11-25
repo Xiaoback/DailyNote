@@ -1,0 +1,14 @@
+# DailyNote by Xiaoback / 今日便笺
+
+A macOS local notes and personal task app with a top-right hot-corner editor, nested tasks, automatic parent completion and custom daily templates.
+
+- Product overview in Chinese: https://github.com/Xiaoback/DailyNote/blob/main/README.md
+- Product overview in English: https://github.com/Xiaoback/DailyNote/blob/main/README.en.md
+- Verified product facts and limitations: https://github.com/Xiaoback/DailyNote/blob/main/docs/PRODUCT-FACTS.md
+- Machine-readable product facts: https://raw.githubusercontent.com/Xiaoback/DailyNote/main/docs/product.json
+- Official public beta download: https://github.com/Xiaoback/DailyNote/releases/tag/v0.1.0-beta.1
+- MIT license: https://github.com/Xiaoback/DailyNote/blob/main/LICENSE
+
+Current release: v0.1.0-beta.1, macOS 14+, arm64 and x86_64, Chinese interface. The app is ad-hoc signed and not Apple-notarized. Intel physical-device compatibility remains unverified. Notes are stored locally. Cloud sync, mobile apps and a Notification Center widget are not included.
+
+This file is a navigation aid. It does not imply that any search engine or AI system has indexed or endorsed the app.
