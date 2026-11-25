@@ -1,5 +1,7 @@
 # DailyNote by Xiaoback — local macOS notes and tasks from a hot corner
 
+[Visit the product website](https://xiaoback.github.io/DailyNote/en/)
+
 Capture a thought, then return to your work.
 
 Move the pointer to the top-right corner of your Mac screen. After a short dwell, DailyNote opens an editable side panel. Keep the pointer inside to read or write. Move outside and the panel saves and hides automatically.

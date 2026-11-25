@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>今日便笺 DailyNote · 右上角唤出的 Mac 本地便笺与待办</title>
+<meta name="description" content="今日便笺是一款 macOS 本地便笺与待办应用。右上角唤出，移入编辑，移出自动保存收起。支持多级待办、父任务自动完成、自定义每日模板和霞鹜文楷。">
+<link rel="canonical" href="https://xiaoback.github.io/DailyNote/">
+<link rel="alternate" hreflang="zh-CN" href="https://xiaoback.github.io/DailyNote/">
+<link rel="alternate" hreflang="en" href="https://xiaoback.github.io/DailyNote/en/">
+<link rel="alternate" hreflang="x-default" href="https://xiaoback.github.io/DailyNote/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DailyNote · 今日便笺">
+<meta property="og:title" content="想到就记，写完就继续。· 今日便笺">
+<meta property="og:description" content="右上角唤出的 macOS 本地便笺，支持多级待办和每日模板。">
+<meta property="og:url" content="https://xiaoback.github.io/DailyNote/">
+<meta property="og:image" content="https://xiaoback.github.io/DailyNote/media/dailynote-light.png">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer>
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","@id":"https://xiaoback.github.io/DailyNote/#application","name":"今日便笺 DailyNote","operatingSystem":"macOS 14 or later","applicationCategory":"ProductivityApplication","softwareVersion":"0.1.0-beta.1","inLanguage":"zh-CN","url":"https://xiaoback.github.io/DailyNote/","downloadUrl":"https://github.com/Xiaoback/DailyNote/releases/tag/v0.1.0-beta.1","image":"https://xiaoback.github.io/DailyNote/media/dailynote-light.png","license":"https://github.com/Xiaoback/DailyNote/blob/main/LICENSE","author":{"@type":"Person","name":"Xiaoback","url":"https://github.com/Xiaoback"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"右上角唤出的 macOS 本地便笺与多级待办，支持富文本、自定义每日模板和父任务自动完成。当前为未公证测试版。"}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header>
+<div class="wrap nav">
+<a class="brand" href="./">
+<span class="mark" aria-hidden="true">
+</span>今日便笺 <span class="small">DailyNote</span>
+</a>
+<nav aria-label="主导航">
+<a class="nav-secondary" href="#features">功能</a>
+<a class="nav-secondary" href="#demo">演示</a>
+<a href="en/" lang="en">English</a>
+<a class="nav-download" href="#download">下载</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="wrap hero" aria-labelledby="hero-title">
+<div>
+<p class="eyebrow">macOS 本地便笺与待办</p>
+<h1 id="hero-title">想到就记。<br>写完就继续。</h1>
+<p class="intro">一个想法、一件待办，值得及时记下。鼠标推到右上角，便笺就在手边。移出后自动保存并收起，继续做正在做的事。</p>
+<div class="actions">
+<a class="button primary" href="https://github.com/Xiaoback/DailyNote/releases/tag/v0.1.0-beta.1">下载免费测试版</a>
+<a class="button" href="#demo">看看怎样用</a>
+</div>
+<p class="small">macOS 14+ · Apple Silicon / Intel · MIT 开源<br>v0.1.0-beta.1 · 未经 Apple 公证，首次打开可能需手动批准</p>
+</div>
+<div class="hero-visual">
+<figure>
+<img class="app-shot" src="media/dailynote-light.png" width="520" height="680" alt="今日便笺真实界面，展示文楷、高亮和上午下午晚上待办分组" fetchpriority="high">
+<figcaption>真实编辑器界面 · 示例内容</figcaption>
+</figure>
+</div>
+</section>
+<div class="wrap promise">
+<span>右上角，随时记一笔</span>
+<span>自由文字，也能分层管理待办</span>
+<span>便笺与备份，保存在自己的 Mac</span>
+</div>
+<section id="demo" class="wrap section demo-layout" aria-labelledby="demo-title">
+<div>
+<p class="eyebrow">让记录接上你的工作</p>
+<h2 id="demo-title">看一眼计划，<br>再接着往前做。</h2>
+<p class="lede">应用运行时，右上角停留约 0.4 秒即可唤出面板。鼠标移入时保持展示，移出后短暂延迟再保存收起。</p>
+<ol class="steps">
+<li>鼠标推到屏幕右上角。</li>
+<li>移入面板，直接输入或勾选。</li>
+<li>移出面板，继续手头的工作。</li>
+</ol>
+</div>
+<div>
+<div class="demo-frame">
+<img data-demo src="media/dailynote-hot-corner-still.png" data-animation="media/dailynote-hot-corner.gif" data-poster="media/dailynote-hot-corner-still.png" width="860" height="580" alt="右上角唤出、移入保持和移出自动收起的交互示意">
+<noscript>
+<p>完整动图见 <a href="media/dailynote-hot-corner.gif">右上角交互演示</a>。</p>
+</noscript>
+</div>
+<div class="demo-controls">
+<span class="small">交互示意 · 采用真实编辑器界面合成</span>
+<button hidden class="button" type="button" data-motion-toggle data-pause="暂停动图" data-play="播放动图" aria-pressed="false">播放动图</button>
+</div>
+<p class="demo-caption">此动图用于说明交互流程，并非屏幕实录。截图与动画均使用示例便笺。</p>
+</div>
+</section>
+<section id="features" class="wrap section" aria-label="便笺的使用场景">
+<div class="story">
+<div class="story-visual">
+<img src="media/dailynote-outline.png" width="520" height="680" loading="lazy" alt="多级待办中圆形父子项目与方形孙项目，各层级可以折叠">
+</div>
+<div class="story-copy">
+<p class="eyebrow">把大事拆成能做的小事</p>
+<h2>步骤分清了，<br>进展也就看清了。</h2>
+<p>用 Tab 一层层拆开任务，用折叠留下眼前要做的部分。孙项目使用方形标记，层级更容易辨认。</p>
+<p>全部子待办完成后，父待办会逐级自动完成。子项恢复未完成时，上层也随之更新。</p>
+<div class="feature-note">Shift+Tab 减少一级缩进。父项目移动时，下属项目一起移动。取消的子事项不计作完成。</div>
+</div>
+</div>
+<div class="story flip">
+<div class="story-visual templates">
+<img src="media/dailynote-templates.png" width="588" height="498" loading="lazy" alt="每日模板管理界面，可新建、编辑和插入个人模板">
+</div>
+<div class="story-copy">
+<p class="eyebrow">把自己的节奏留下来</p>
+<h2>新的一天，<br>从熟悉的安排开始。</h2>
+<p>工作日、学习计划、每周复盘，都可以存成自己的模板。分组、子待办和文字格式一起复用。</p>
+<p>也可以直接把当前便笺存成模板，选好日期后手动插入，所有待办恢复为未完成。</p>
+<div class="feature-note">模板追加到便笺末尾，支持整体撤销。原有“上午／下午／晚上”预设也可以编辑。</div>
+</div>
+</div>
+<div class="story">
+<div class="story-visual dark">
+<img src="media/dailynote-dark.png" width="520" height="680" loading="lazy" alt="今日便笺暗夜黑界面，包含高亮、文楷和待办">
+</div>
+<div class="story-copy">
+<p class="eyebrow">自由写，也认真整理</p>
+<h2>有些是想法，<br>有些是下一步。</h2>
+<p>自由文字和待办可以写在同一张便笺里。用文楷、高亮、加粗和选区字号，把重要的话留得更清楚。</p>
+<p>外观支持浅色、暗夜黑和跟随系统。切换日期，回看过去，也提前安排未来。</p>
+<div class="feature-note">便笺、模板和自动备份保存在本机，菜单中提供导出与备份导入。</div>
+</div>
+</div>
+</section>
+<section id="download" class="wrap install" aria-labelledby="download-title">
+<div class="install-grid">
+<div>
+<p class="eyebrow">开始记下你的今天</p>
+<h2 id="download-title">把便笺，放到右上角。</h2>
+<p>免费开源的 macOS 应用，当前提供公开测试版。</p>
+<a class="button primary" href="https://github.com/Xiaoback/DailyNote/releases/tag/v0.1.0-beta.1">下载 v0.1.0-beta.1</a>
+<p class="small">macOS 14+ · 通用架构<br>下载页附 SHA-256 校验文件</p>
+</div>
+<div>
+<ol>
+<li>下载 DMG，打开磁盘映像。</li>
+<li>把 DailyNote 拖入 Applications。</li>
+<li>从“应用程序”启动，尝试右上角唤出。</li>
+</ol>
+<div class="notice">当前安装包使用临时签名，未经 Apple 公证。若首次运行被系统阻止，请确认来源可信，再按照苹果说明在“隐私与安全性”中为应用选择“仍要打开”。<p>
+<a href="https://support.apple.com/zh-cn/102445">查看苹果首次打开说明</a>
+</p>
+</div>
+</div>
+</div>
+<p class="trust">Apple Silicon 的启动与核心行为已测试。Intel 架构已编译，Intel 实机及其他 Mac 的安装体验仍待验证。部分受管理的电脑可能限制安装未公证应用。</p>
+</section>
+<section id="faq" class="wrap section">
+<div class="faq">
+<p class="eyebrow">使用前，你可能想知道</p>
+<h2>常见问题</h2>
+<details>
+<summary>要安装 Xcode 或注册开发者账户吗？</summary>
+<p>使用已经编译好的 DMG 安装包时无需 Xcode 或开发者账户。从源码自行构建时需要完整 Xcode 和命令行工具。</p>
+</details>
+<details>
+<summary>便笺和备份放在哪里？</summary>
+<p>保存在本机的以下目录。删除目录前，请先通过应用菜单导出或备份数据。</p>
+<p class="data-path">~/Library/Application Support/DailyNote/</p>
+</details>
+<details>
+<summary>右上角功能需要什么设置？</summary>
+<p>启动应用后即可使用。可以在应用菜单中开启或关闭“右上角触发便笺”。按 ⌘Q 退出后，触发停止，下次使用时从 Applications 启动。当前版本未自动配置登录启动。</p>
+</details>
+<details>
+<summary>它和系统触发角、通知中心有什么关系？</summary>
+<p>右上角唤出由今日便笺在运行期间提供，打开的是可直接编辑的应用面板。公开安装包未包含通知中心小组件，也未在系统触发角设置中新增动作。</p>
+</details>
+<details>
+<summary>能同步到手机或另一台电脑吗？</summary>
+<p>当前版本支持本机记录和手动备份迁移。云同步、手机端和团队协作尚未提供，界面语言为中文。</p>
+</details>
+<details>
+<summary>哪里能找到源码、许可和产品资料？</summary>
+<p>
+<a href="https://github.com/Xiaoback/DailyNote">GitHub 仓库</a> 提供 MIT 许可源码。字体使用 SIL OFL 1.1。<a href="facts.md">产品事实文档</a> 与 <a href="product.json">结构化信息</a> 列出了功能及限制，供阅读和引用。</p>
+</details>
+<div class="download-tail">
+<p>先记下一件事，<br>再回到正在做的事。</p>
+<a class="button" href="https://github.com/Xiaoback/DailyNote/issues">反馈问题</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="wrap footer">
+<div>今日便笺 DailyNote · Xiaoback · MIT 开源</div>
+<div>
+<a href="https://github.com/Xiaoback/DailyNote">源码</a>
+<a href="https://github.com/Xiaoback/DailyNote/releases">版本</a>
+<a href="llms.txt">阅读索引</a>
+<a href="en/" lang="en">English</a>
+</div>
+</footer>
+</body>
+</html>

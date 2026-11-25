@@ -1,5 +1,8 @@
 # DailyNote by Xiaoback / 今日便笺
 
+- Official product website: https://xiaoback.github.io/DailyNote/
+- English product website: https://xiaoback.github.io/DailyNote/en/
+
 A macOS local notes and personal task app with a top-right hot-corner editor, nested tasks, automatic parent completion and custom daily templates.
 
 - Product overview in Chinese: https://github.com/Xiaoback/DailyNote/blob/main/README.md
